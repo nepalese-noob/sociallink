@@ -6,7 +6,7 @@ def sites():
 		def openInstrucktion():
 			
 			
-			f = open("new.txt")
+			f = open("/assets/new.txt")
 			#t is a Text widget
 			example3.insert(INSERT, f.read())
 		link = os.system("cd assets; hostit -f cloudflare 8080 > link.txt; grep -o 'https://[-0-9a-z]*\.trycloudflare.com' 'link.txt' > new.txt; rm link.txt")
