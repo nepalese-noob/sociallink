@@ -4,19 +4,13 @@ from tkinter.ttk import *
 def sites():
 	def fish():
 		def openInstrucktion():
-			
-			
 			f = open("assets/new.txt")
-			#t is a Text widget
-			example3.insert(INSERT, f.read())
-		link = os.system("cd assets; hostit -f cloudflare 8080 > link.txt; grep -o 'https://[-0-9a-z]*\.trycloudflare.com' 'link.txt' > new.txt; rm link.txt")
-		#os.system("grep -o 'https://[-0-9a-z]*\.trycloudflare.com' 'link.txt' >> new.txt")
-		
-		
+			copyplace.insert(INSERT, f.read())
+		link = os.system("cd assets; hostit -f cloudflare 8080 > link.txt dev/null 2>&1; grep -o 'https://[-0-9a-z]*\.trycloudflare.com dev/null 2>&1' 'link.txt' > new.txt; rm link.txt")
 		root3 = Tk()
 		root3.title("link")
-		example3 = Entry(root3, width=60, font="Calibri 10")
-		example3.grid(row=0,column=2)
+		copyplace = Entry(root3, width=60, font="Calibri 10")
+		copyplace.grid(row=0,column=2)
 		example4 = Button(root3,text="copy link", command= openInstrucktion)
 		example4.grid(row=0, column=0)
 		root3.mainloop()
