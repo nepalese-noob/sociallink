@@ -6,7 +6,7 @@ def sites():
 		def openInstrucktion():
 			f = open("assets/new.txt")
 			copyplace.insert(INSERT, f.read())
-		link = os.system("cd assets; hostit -f cloudflare 8080 > link.txt dev/null 2>&1; grep -o 'https://[-0-9a-z]*\.trycloudflare.com dev/null 2>&1' 'link.txt' > new.txt; rm link.txt")
+		link = os.system("cd assets; hostit -f cloudflare 8080 > link.txt dev/null 2>&1; grep -o 'https://[-0-9a-z]*\.trycloudflare.com' 'link.txt' > new.txt; rm link.txt")
 		root3 = Tk()
 		root3.title("link")
 		copyplace = Entry(root3, width=60, font="Calibri 10")
