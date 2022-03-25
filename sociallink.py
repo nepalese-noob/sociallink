@@ -9,7 +9,7 @@ def sites():
 			f = open("new.txt")
 			#t is a Text widget
 			example3.insert(INSERT, f.read())
-		link = os.system("hostit -f cloudflare 8080 > link.txt; grep -o 'https://[-0-9a-z]*\.trycloudflare.com' 'link.txt' > new.txt; rm link.txt")
+		link = os.system("cd assets; hostit -f cloudflare 8080 > link.txt; grep -o 'https://[-0-9a-z]*\.trycloudflare.com' 'link.txt' > new.txt; rm link.txt")
 		#os.system("grep -o 'https://[-0-9a-z]*\.trycloudflare.com' 'link.txt' >> new.txt")
 		
 		
