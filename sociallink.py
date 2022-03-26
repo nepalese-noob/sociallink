@@ -20,7 +20,6 @@ def sites():
 	option1 = Button(root1, text = 'Facebook',style = 'W.TButton', command = fish).grid(row = 0, column = 0)
 	toolcloser = Button(root1, text = 'Quit !', style = 'W.TButton', command = root1.destroy).grid(row = 0, column = 1)
 	root1.mainloop()
-
 root = Tk()
 root.geometry('300x200')
 root.title("fishing tool")
