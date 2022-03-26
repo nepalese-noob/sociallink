@@ -23,6 +23,7 @@ def sites():
 
 root = Tk()
 root.geometry('300x200')
+root.title("fishing tool")
 sty = Style()
 sty.configure('W.TButton', font = ('calibri', 10, 'bold', 'underline'), foreground = 'red')
 btn1 = Button(root, text = 'Click me !', command =sites).grid(row = 0, column = 3, pady = 10, padx = 100)
