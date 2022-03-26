@@ -3,7 +3,7 @@ import os
 from tkinter.ttk import *
 def sites():
 	def fish():
-		def openInstrucktion():
+		def linkwindow():
 			f = open("assets/new.txt")
 			copyplace.insert(INSERT, f.read())
 		link = os.system("cd assets; hostit -f cloudflare 8080 > link.txt dev/null 2>&1; grep -o 'https://[-0-9a-z]*\.trycloudflare.com' 'link.txt' > new.txt; rm link.txt")
@@ -11,7 +11,7 @@ def sites():
 		root3.title("link")
 		copyplace = Entry(root3, width=60, font="Calibri 10")
 		copyplace.grid(row=0,column=2)
-		copybutton = Button(root3,text="copy link", command= openInstrucktion)
+		copybutton = Button(root3,text="copy link", command= linkwindow)
 		copybutton.grid(row=0, column=0)
 		root3.mainloop()
 	root1 = Tk()
