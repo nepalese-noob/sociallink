@@ -1,9 +1,0 @@
-
-Username: 9746573071
-Password: 111111
-OTP: 111111
-IP: 103.95.17.5
- User-Agent: Mozilla/5.0 (Linux; Android 11; M2004J19C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 Mobile Safari/537.36
-Username: 00000
-Password: 000000
-OTP: 00000
