@@ -1,0 +1,53 @@
+{"level":"info","time":"2021-11-26T16:25:04Z","message":"Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps"}
+{"level":"info","time":"2021-11-26T16:25:04Z","message":"Requesting new quick Tunnel on trycloudflare.com..."}
+{"level":"info","time":"2021-11-26T16:25:08Z","message":"+--------------------------------------------------------------------------------------------+"}
+{"level":"info","time":"2021-11-26T16:25:08Z","message":"|  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |"}
+{"level":"info","time":"2021-11-26T16:25:08Z","message":"|  https://faces-vip-tiffany-locate.trycloudflare.com                                        |"}
+{"level":"info","time":"2021-11-26T16:25:08Z","message":"+--------------------------------------------------------------------------------------------+"}
+{"level":"info","time":"2021-11-26T16:25:08Z","message":"Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp /etc/cloudflared /usr/local/etc/cloudflared]"}
+{"level":"info","time":"2021-11-26T16:25:08Z","message":"Version 2021.11.0"}
+{"level":"info","time":"2021-11-26T16:25:08Z","message":"GOOS: linux, GOVersion: devel +a84af465cb Mon Aug 9 10:31:00 2021 -0700, GoArch: arm64"}
+{"level":"info","time":"2021-11-26T16:25:08Z","message":"Settings: map[logfile:.cloudflare-log protocol:quic url:127.0.0.1:4444]"}
+{"level":"info","autoupdateFreq":86400000,"time":"2021-11-26T16:25:08Z","message":"Autoupdate frequency is set"}
+{"level":"info","time":"2021-11-26T16:25:08Z","message":"Generated Connector ID: 01600583-5cfd-4c39-83aa-6037cdc175d3"}
+{"level":"info","time":"2021-11-26T16:25:08Z","message":"Initial protocol quic"}
+{"level":"info","time":"2021-11-26T16:25:08Z","message":"Starting metrics server on 127.0.0.1:43239/metrics"}
+{"level":"error","time":"2021-11-26T16:25:09Z","message":"Failed to create new quic connection, err: Unauthorized: Record for tunnel not found"}
+{"level":"error","connIndex":0,"error":"Unauthorized: Record for tunnel not found","time":"2021-11-26T16:25:09Z","message":"Register tunnel error from server side"}
+{"level":"info","connIndex":0,"time":"2021-11-26T16:25:10Z","message":"Retrying connection in up to 2s seconds"}
+{"level":"info","connIndex":0,"location":"SIN","time":"2021-11-26T16:25:11Z","message":"Connection 1efbebff-ff9c-4038-bfca-264082a08db6 registered"}
+{"level":"info","connIndex":1,"location":"BOM","time":"2021-11-26T16:25:11Z","message":"Connection 617868b5-8e8d-40ba-975b-50070b13e2f7 registered"}
+{"level":"info","connIndex":2,"location":"SIN","time":"2021-11-26T16:25:13Z","message":"Connection c7ba3c1e-a1a7-4601-8b2c-83b9c956faf7 registered"}
+{"level":"info","connIndex":3,"location":"BOM","time":"2021-11-26T16:25:14Z","message":"Connection 9cd902c8-a0ae-433f-8758-19f9df682746 registered"}
+{"level":"info","time":"2021-11-26T16:25:15Z","message":"Initiating graceful shutdown due to signal interrupt ..."}
+{"level":"info","connIndex":2,"time":"2021-11-26T16:25:15Z","message":"Unregistered tunnel connection"}
+{"level":"info","connIndex":0,"time":"2021-11-26T16:25:15Z","message":"Unregistered tunnel connection"}
+{"level":"info","connIndex":3,"time":"2021-11-26T16:25:15Z","message":"Unregistered tunnel connection"}
+{"level":"info","connIndex":1,"time":"2021-11-26T16:25:16Z","message":"Unregistered tunnel connection"}
+{"level":"info","time":"2021-11-26T16:25:45Z","message":"Tunnel server stopped"}
+{"level":"info","time":"2021-11-26T16:25:45Z","message":"Metrics server stopped"}
+{"level":"info","time":"2021-11-26T16:25:49Z","message":"Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps"}
+{"level":"info","time":"2021-11-26T16:25:49Z","message":"Requesting new quick Tunnel on trycloudflare.com..."}
+{"level":"info","time":"2021-11-26T16:25:53Z","message":"+--------------------------------------------------------------------------------------------+"}
+{"level":"info","time":"2021-11-26T16:25:53Z","message":"|  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |"}
+{"level":"info","time":"2021-11-26T16:25:53Z","message":"|  https://diamond-rt-prime-armed.trycloudflare.com                                          |"}
+{"level":"info","time":"2021-11-26T16:25:53Z","message":"+--------------------------------------------------------------------------------------------+"}
+{"level":"info","time":"2021-11-26T16:25:53Z","message":"Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp /etc/cloudflared /usr/local/etc/cloudflared]"}
+{"level":"info","time":"2021-11-26T16:25:53Z","message":"Version 2021.11.0"}
+{"level":"info","time":"2021-11-26T16:25:53Z","message":"GOOS: linux, GOVersion: devel +a84af465cb Mon Aug 9 10:31:00 2021 -0700, GoArch: arm64"}
+{"level":"info","time":"2021-11-26T16:25:53Z","message":"Settings: map[logfile:.cloudflare-log protocol:quic url:127.0.0.1:4444]"}
+{"level":"info","autoupdateFreq":86400000,"time":"2021-11-26T16:25:53Z","message":"Autoupdate frequency is set"}
+{"level":"info","time":"2021-11-26T16:25:53Z","message":"Generated Connector ID: 2e411c38-4ee4-4ef1-90b5-b5eefaa27608"}
+{"level":"info","time":"2021-11-26T16:25:53Z","message":"Initial protocol quic"}
+{"level":"info","time":"2021-11-26T16:25:53Z","message":"Starting metrics server on 127.0.0.1:36287/metrics"}
+{"level":"info","connIndex":0,"location":"SIN","time":"2021-11-26T16:25:54Z","message":"Connection b9feaf81-a561-48bc-88c6-e48d494a23a1 registered"}
+{"level":"info","connIndex":2,"location":"SIN","time":"2021-11-26T16:25:56Z","message":"Connection 283bfd6d-9077-4b0f-8ce1-d51b7debccfa registered"}
+{"level":"info","connIndex":3,"location":"BOM","time":"2021-11-26T16:25:58Z","message":"Connection 90af5fa3-21a2-4a7a-a3f1-8fffa329849c registered"}
+{"level":"info","connIndex":1,"location":"BOM","time":"2021-11-26T16:25:59Z","message":"Connection f1f0a6c9-4db4-40f6-a23c-6cf36e3442ed registered"}
+{"level":"info","time":"2021-11-26T16:26:01Z","message":"Initiating graceful shutdown due to signal interrupt ..."}
+{"level":"info","connIndex":0,"time":"2021-11-26T16:26:01Z","message":"Unregistered tunnel connection"}
+{"level":"info","connIndex":2,"time":"2021-11-26T16:26:01Z","message":"Unregistered tunnel connection"}
+{"level":"info","connIndex":1,"time":"2021-11-26T16:26:01Z","message":"Unregistered tunnel connection"}
+{"level":"info","connIndex":3,"time":"2021-11-26T16:26:02Z","message":"Unregistered tunnel connection"}
+{"level":"info","time":"2021-11-26T16:26:31Z","message":"Tunnel server stopped"}
+{"level":"info","time":"2021-11-26T16:26:31Z","message":"Metrics server stopped"}
