@@ -1,5 +1,5 @@
 # sociallink
-it is the gui version of fishing link generater, it only working for facebook yet. helped by @www.github.com/BHUTUU
+it is the gui version of fishing link generater, it only working for hack facebook and instagram yet. helped by @www.github.com/BHUTUU
 
 ```apt-get install python3-tk```
 
